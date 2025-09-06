@@ -1,0 +1,57 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* font-faces */
+
+@font-face {
+    font-family:heading-font;
+    src: url("https://res.cloudinary.com/dff30apwl/raw/upload/v1757100805/cb-font-1_lz2pn2.woff2") format("woff2");
+}
+
+@font-face {
+    font-family:primary-font;
+    src: url("https://res.cloudinary.com/dff30apwl/raw/upload/v1757105818/cb-font-2_vehfbh.ttf") format("truetype");
+}
+
+@font-face {
+    font-family:sub-heading-font;
+    src: url("https://res.cloudinary.com/dff30apwl/raw/upload/v1757100817/cb-font-3_nqyk1v.woff2") format("woff2");
+}
+
+
+/* custom theme */
+
+@theme{
+  --font-heading:FontHeading;
+  --font-sub: FontSub;
+  --font-body: FontBody;
+
+  /* Whites*/
+  --color-white: #ffffff;
+  --color-offwhite: #f9f9f9;
+  --color-offwhite-dark: #e0e0e0;
+
+  /* Reds */
+  --color-red-dark: #E53935;
+  --color-red-light: #FF6F61;
+
+  /* Yellows */
+  --color-yellow-light: #FFC107;
+  --color-yellow-dark: #FFA000;
+
+  /* links */
+  --color-link-dark:#007bff;
+  --color-link-light:#3399ff;
+}
+
+
+@layer base{
+}
+
+@layer components{
+  
+}
+
+.debug {
+  font-family: var(--font-heading);
+}
