@@ -18,13 +18,12 @@
     src: url("https://res.cloudinary.com/dff30apwl/raw/upload/v1757100817/cb-font-3_nqyk1v.woff2") format("woff2");
 }
 
-
 /* custom theme */
 
 @theme{
-  --font-heading:FontHeading;
-  --font-sub: FontSub;
-  --font-body: FontBody;
+  --font-heading:heading-font, sans-serif;
+  --font-body: primary-font , sans-serif;
+  --font-sub: sub-heading-font, sans-serif;
 
   /* Whites*/
   --color-white: #ffffff;
@@ -46,12 +45,26 @@
 
 
 @layer base{
+  body{
+    @apply text-sm md:text-base lg:text-lg font-body;
+  }
 }
 
-@layer components{
-  
-}
+@layer utilities {
+  .padding-responsive {
+    @apply px-4 md:px-8 lg:px-16;
+  }
 
-.debug {
-  font-family: var(--font-heading);
+  .nav-link-text {
+    @apply text-sm md:text-base lg:text-xl;
+  }
+
+    .heading-responsive {
+    @apply text-lg md:text-xl lg:text-2xl font-heading font-bold;
+  }
+
+
+  .subheading-responsive {
+    @apply text-base md:text-lg lg:text-xl font-heading font-semibold;
+  }
 }
