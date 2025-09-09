@@ -5,23 +5,23 @@ const Footer = () => {
   const Navigate= useNavigate()
 
 return (
-<footer className="footer footer-horizontal bg-base-300 text-base-content p-10">
+<footer className="footer footer-horizontal bg-black opacity-100 text-white ext-base-content p-10">
   <nav>
-    <h6 className="footer-title">Services</h6>
+    <h6 className="footer-title text-red-dark opacity-100 tracking-wider">Services</h6>
     <a onClick={() => Navigate("/menu")} className="link link-hover">Menu</a>
     <a className="link link-hover">Order</a>
     <a className="link link-hover">Locations</a>
     <a className="link link-hover">Blog</a>
   </nav>
   <nav>
-    <h6 className="footer-title">Company</h6>
+    <h6 className="footer-title text-red-dark opacity-100 tracking-wider">Company</h6>
     <a className="link link-hover">Stores</a>
     <a className="link link-hover">About us</a>
     <a className="link link-hover">Contact</a>
     <a className="link link-hover">Privacy Policy</a>
   </nav>
   <nav>
-    <h6 className="footer-title">Social</h6>
+    <h6 className="footer-title text-red-dark opacity-100 tracking-wider">Social</h6>
     <div className="grid grid-flow-col gap-4">
       <a href="https://twitter.com/">
         <svg

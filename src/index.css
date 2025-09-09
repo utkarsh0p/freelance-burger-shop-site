@@ -20,33 +20,41 @@
 
 /* custom theme */
 
-@theme{
-  --font-heading:heading-font, sans-serif;
-  --font-body: primary-font , sans-serif;
+@theme {
+  --font-heading: heading-font, sans-serif;
+  --font-body: primary-font, sans-serif;
   --font-sub: sub-heading-font, sans-serif;
 
-  /* Whites*/
+  /* Neutrals (Backgrounds) */
   --color-white: #ffffff;
-  --color-offwhite: #f9f9f9;
-  --color-offwhite-dark: #e0e0e0;
+  --color-offwhite: #fdf6f0;   /* softer, warmer off-white */
+  --color-offwhite-dark: #e6dcd3; /* subtle beige */
 
-  /* Reds */
-  --color-red-dark: #E53935;
-  --color-red-light: #FF6F61;
+  /* Primary Reds (Branding) */
+  --color-red-dark: #D32F2F;   /* bold, deep red */
+  --color-red-light: #F44336;  /* vibrant red for accents */
 
-  /* Yellows */
-  --color-yellow-light: #FFC107;
-  --color-yellow-dark: #FFA000;
+  /* Yellows/Oranges (Highlights & Buttons) */
+  --color-yellow-light: #FFCA28;  /* warm golden yellow */
+  --color-yellow-dark: #FF9800;   /* orange for hover/CTA */
 
-  /* links */
-  --color-link-dark:#007bff;
-  --color-link-light:#3399ff;
+  /* Greens (Success) */
+  --color-hover:#00813D;
 }
+
 
 
 @layer base{
   body{
     @apply text-sm md:text-base lg:text-lg font-body;
+  }
+
+  p{
+    @apply text-sm md:text-base text-black
+  }
+
+  h1,h2,h3,h4,h5,h6{
+    @apply font-heading tracking-normal
   }
 }
 
@@ -56,15 +64,25 @@
   }
 
   .nav-link-text {
-    @apply text-sm md:text-base lg:text-xl;
+    @apply text-sm md:text-base lg:text-lg;
   }
 
-    .heading-responsive {
-    @apply text-lg md:text-xl lg:text-2xl font-heading font-bold;
+  .heading-responsive {
+    @apply text-xl md:text-2xl lg:text-3xl font-heading font-bold;
   }
-
 
   .subheading-responsive {
     @apply text-base md:text-lg lg:text-xl font-heading font-semibold;
+  }
+
+  .card-shadow {
+    @apply bg-white p-6;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+                rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: transform 0.3s ease;
+  }
+
+  .text-responsive {
+    @apply text-sm md:text-base lg:text-lg font-body;
   }
 }
