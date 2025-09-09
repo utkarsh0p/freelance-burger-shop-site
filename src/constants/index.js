@@ -4,7 +4,7 @@ export const cardBakground = "https://res.cloudinary.com/dff30apwl/image/upload/
 
 //main-banner
 
-export const heroBanner = "https://res.cloudinary.com/dff30apwl/image/upload/w_2100,f_auto,q_auto/v1757327291/hero-bg-banner_rax1wy.png"
+export const heroBanner = "https://res.cloudinary.com/dff30apwl/image/upload/w_1100,f_auto,q_auto/v1757327291/hero-bg-banner_rax1wy.png"
 
 // Logos
 
@@ -48,6 +48,24 @@ export const royalSandwich = "https://res.cloudinary.com/dff30apwl/image/upload/
 
 export const cornAndCheeseSandwich = "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757096588/Corn_and_cheese_sandwich_pimqpz.jpg";
 
+//menu images
+
+export const burger = "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757423048/burger_rqaecw.png"
+
+
+export const sandwiches = "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757423038/download_tip2rr.png"
+
+export const fries = "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757423055/download_neqkjk.png"
+
+export const icecream = "https://res.cloudinary.com/dff30apwl/image/upload/v1757423053/download_zlwers.png"
+
+export const dessert = "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757423061/download_vnons1.png"
+
+export const wraps = "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757441986/download_m2vrmz.png"
+
+export const crusburgBrandingCard = "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757423273/04_sgsbph.jpg"
+
+export const cardBackground = "https://res.cloudinary.com/dff30apwl/image/upload/v1757441272/catagory-card-shape_prusnv.png"
 
 export const menu = {
   burgers: [
@@ -116,5 +134,3 @@ export const menu = {
     { name: "Extra Cheese Add On", prices: [25] },
   ],
 };
-
-export default menu;

@@ -16,8 +16,8 @@ const Navbar = () => {
   const liClass = " md:border-none border-b-2 border-dashed border-black";
 
   return (
-    <div className="nav max-w-full card-shadow flex text-red-dark justify-between items-center padding-responsive nav-link-text bg-navbar py-1 overflow-hidden sticky top-0 z-200 bg-green-600">
-      <div className="w-50 lg:w-60  flex justify-center">
+    <div className="nav max-w-full card-shadow flex text-red-dark justify-between items-center padding-responsive nav-link-text bg-navbar py-1 overflow-hidden sticky top-0 z-200">
+      <div className="w-50 lg:w-60  flex justify-center relative right-4">
         <img
           src={logoRed}
           alt="logo"

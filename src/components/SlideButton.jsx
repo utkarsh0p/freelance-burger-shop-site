@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
-const SlideButton = ({ value, url }) => {
+const SlideButton = ({ value, url, nav }) => {
+  const navigate = useNavigate();
+
   const baseClasses =
     "relative inline-block overflow-hidden px-6 py-3 bg-red-dark text-white transition-colors group italic tracking-wider font-heading";
 
@@ -17,13 +20,26 @@ const SlideButton = ({ value, url }) => {
     </>
   );
 
-  return url ? (
-    <a href={url} className={baseClasses}>
-      {content}
-    </a>
-  ) : (
-    <button className={baseClasses}>{content}</button>
-  );
+  if (url) {
+    return (
+      <a href={url} className={baseClasses}>
+        {content}
+      </a>
+    );
+  }
+
+  if (nav) {
+    return (
+      <button
+        className={baseClasses}
+        onClick={() => navigate(nav)}
+      >
+        {content}
+      </button>
+    );
+  }
+
+  return <button className={baseClasses}>{content}</button>;
 };
 
 export default SlideButton;
