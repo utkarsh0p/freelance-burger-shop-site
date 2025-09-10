@@ -1,5 +1,5 @@
 // HomePage.jsx
-import React from "react";
+import React, { useLayoutEffect } from "react";
 import SlideButton from "../components/SlideButton";
 import ReviewCarousel from "../components/ReviewCarousel";
 import {
@@ -13,8 +13,14 @@ import {
   crusburgBrandingCard,
   cardBackground,
 } from "../constants";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+gsap.registerPlugin(ScrollTrigger);
 
 const HomePage = () => {
+  // gsap animaitons
+  useLayoutEffect(() => {});
+
   const foodItems = [
     { name: "Burgers", img: burger },
     { name: "Sandwiches", img: sandwiches },
@@ -28,10 +34,13 @@ const HomePage = () => {
     <main className="bg-white text-responsive">
       {/* Hero / Banner Section */}
       <section className="w-full h-[25vh] md:h-[60vh] lg:h-[80vh]">
-        <div className="banner bg-center w-full h-full bg-cover  flex flex-col justify-center items-center text-center text-white" style={{ backgroundImage: `url(${heroBanner})` }}>
-        <div className="butotn-container mt-28 md:mt-50 lg:mt-70">
-            <SlideButton value="Explore Our Menu" url="" nav="/menu"/>
-        </div>
+        <div
+          className="banner bg-center w-full h-full bg-cover  flex flex-col justify-center items-center text-center text-white"
+          style={{ backgroundImage: `url(${heroBanner})` }}
+        >
+          <div className="button-container mt-28 md:mt-50 lg:mt-70">
+            <SlideButton value="Explore Our Menu" url="" nav="/menu" />
+          </div>
         </div>
       </section>
 
@@ -40,27 +49,34 @@ const HomePage = () => {
         <h2 className="text-3xl font-heading italic text-red-dark text-center mb-8">
           Popular Food Items
         </h2>
+
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6">
           {foodItems.map(({ name, img }) => (
             <div
               key={name}
-              className="shadow-md rounded-2xl overflow-hidden hover:shadow-lg transition flex flex-col items-center"
+              className="shadow-md rounded-2xl overflow-hidden transition flex flex-col items-center group"
               style={{
                 backgroundImage: `url(${cardBackground})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center",
               }}
             >
-              <div className="h-40 w-full flex items-center justify-center overflow-hidden">
-                <img
-                  src={img}
-                  alt={name}
-                  className="object-contain max-h-full max-w-full"
-                />
-              </div>
-              <div className="p-4 flex flex-col items-center text-center bg-white/80 w-full">
-                <h3 className="text-xl font-heading mb-2">{name}</h3>
-                <SlideButton value={`View ${name}`} nav="/menu" />
+              {/* Card Content */}
+              <div className="w-full flex flex-col items-center justify-between h-full p-6">
+                {/* Image wrapper with fixed height for consistency */}
+                <div className="flex items-center justify-center h-40">
+                  <img
+                    src={img}
+                    alt={name}
+                    className="object-contain max-h-full transition-transform duration-300 group-hover:scale-120 md:group-hover:scale-150"
+                  />
+                </div>
+
+                {/* Title & Button */}
+                <div className="mt-4 flex flex-col items-center text-center w-full">
+                  <h3 className="text-xl font-heading mb-2">{name}</h3>
+                  <SlideButton value={`View ${name}`} nav="/menu" />
+                </div>
               </div>
             </div>
           ))}
@@ -69,40 +85,13 @@ const HomePage = () => {
 
       {/* review Carousel */}
       <section className="max-w-6xl mx-auto py-16 px-4">
-      <h2 className="text-3xl font-heading italic text-red-dark text-center mb-8">
-         What Our Customers Say
-      </h2>
-  <ReviewCarousel />
-</section>
-
-      {/* How We Serve */}
-      <section className="max-w-6xl mx-auto py-16 px-4">
         <h2 className="text-3xl font-heading italic text-red-dark text-center mb-8">
-          How We Serve You
+          What Our Customers Say
         </h2>
-        <div className="grid md:grid-cols-3 gap-6 text-center font-sub">
-          {["1. Place an Order", "2. We Prepare Fresh", "3. Quick Delivery"].map(
-            (step) => (
-              <div
-                key={step}
-                className="p-6 shadow rounded-2xl hover:shadow-lg transition"
-                style={{
-                  backgroundImage: `url(${cardBackground})`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                }}
-              >
-                <h3 className="text-2xl font-bold mb-2">
-                  {step.split(".")[0]}
-                </h3>
-                <p className="text-gray-800">{step.split(".")[1]}</p>
-              </div>
-            )
-          )}
-        </div>
+        <ReviewCarousel />
       </section>
 
-            {/* About + Stats */}
+      {/* About + Stats */}
       <section className="max-w-6xl mx-auto py-16 grid md:grid-cols-2 gap-12 px-4">
         <div>
           <h2 className="text-3xl font-heading italic text-red-dark mb-4">
@@ -139,7 +128,8 @@ const HomePage = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="text-center py-16 px-4"
+      <section
+        className="text-center py-16 px-4"
         style={{
           backgroundImage: `url(${cardBackground})`,
           backgroundSize: "cover",
@@ -151,8 +141,8 @@ const HomePage = () => {
         </h2>
         <p className="font-sub text-gray-800 mb-6 max-w-xl mx-auto bg-white/70 p-4 rounded-lg">
           Join our growing family of stores and bring the unbeatable taste of
-          CrushBurg to your city. Partner with us and be a part of our
-          flavorful journey.
+          CrushBurg to your city. Partner with us and be a part of our flavorful
+          journey.
         </p>
         <SlideButton value="Franchise With Us" nav="/contact" />
       </section>

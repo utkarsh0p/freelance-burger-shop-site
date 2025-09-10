@@ -8,7 +8,7 @@ export const heroBanner = "https://res.cloudinary.com/dff30apwl/image/upload/w_1
 
 // Logos
 
-export const logoRed = "https://res.cloudinary.com/dff30apwl/image/upload/w_300,f_auto,q_auto/v1757423334/download_bdveg9.png"
+export const logoRed = "https://res.cloudinary.com/dff30apwl/image/upload/w_300,f_png,q_auto/v1757423334/download_bdveg9.png"
 
 export const logoTwo = "https://res.cloudinary.com/dff30apwl/image/upload/w_300,f_auto,q_auto/v1757098033/CB_Logo_Transparent_rgv2df.png";
 

@@ -33,7 +33,7 @@ const ReviewCarousel = () => {
     intervalRef.current = setInterval(() => {
       setActiveIndex((prev) => prev + 1);
       setIsTransitioning(true);
-    }, 4000); // 4 seconds per slide
+    }, 3000); // 3 seconds per slide
     return () => clearInterval(intervalRef.current);
   }, []);
 
@@ -70,7 +70,7 @@ const ReviewCarousel = () => {
             className="w-full flex-shrink-0 flex items-center justify-center px-6"
           >
             <div className="bg-white/80 rounded-xl p-10 md:p-16 max-w-3xl shadow-lg text-center">
-              <p className="italic font-sub text-xl md:text-2xl text-gray-900 mb-6 leading-relaxed">
+              <p className="italic font-body text-lg md:text-xl text-gray-900 mb-6 leading-relaxed">
                 “{text}”
               </p>
               <div className="flex justify-center mb-4">
