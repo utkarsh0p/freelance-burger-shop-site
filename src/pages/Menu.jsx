@@ -66,7 +66,7 @@ const Menu = () => {
     <section className="w-[95vw] mx-auto px-6 py-16 bg-white">
       {/* Page Header */}
       <div className="text-center mb-12 max-w-2xl mx-auto">
-        <h1 className="text-3xl md:text-4xl text-red-dark font-heading italic mb-4">
+        <h1 className="text-2xl md:text-4xl text-red-dark font-heading font-bold mb-4">
           Our Menu
         </h1>
         <p className="font-sub font-bold text-md md:text-lg text-gray-700 leading-relaxed">

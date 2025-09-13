@@ -23,7 +23,7 @@ const Store = () => {
     <section className="max-w-6xl mx-auto px-6 py-16 text-responsive bg-white">
       {/* Intro */}
       <div className="text-center max-w-3xl mx-auto mb-16">
-        <h2 className="text-3xl md:text-4xl mb-4 text-red-600 font-heading italic">
+        <h2 className="text-3xl md:text-4xl mb-4 text-red-600 font-heading itali heading">
           Our Stores
         </h2>
         <p className="font-sub font-bold text-md md:text-lg leading-relaxed">
