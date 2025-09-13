@@ -21,9 +21,8 @@
 /* custom theme */
 
 @theme {
-  --font-heading: heading-font, sans-serif;
   --font-body: primary-font, sans-serif;
-  --font-sub: sub-heading-font, sans-serif;
+  --font-heading: sub-heading-font, sans-serif;
 
   /* Neutrals (Backgrounds) */
   --color-white: #ffffff;
@@ -37,24 +36,13 @@
   /* Yellows/Oranges (Highlights & Buttons) */
   --color-yellow-light: #FFCA28;  /* warm golden yellow */
   --color-yellow-dark: #FF9800;   /* orange for hover/CTA */
-
-  /* Greens (Success) */
-  --color-hover:#00813D;
 }
 
 
 
 @layer base{
-  body{
-    @apply text-sm md:text-base lg:text-lg font-body;
-  }
-
-  p{
-    @apply text-sm md:text-base text-black
-  }
-
   h1,h2,h3,h4,h5,h6{
-    @apply font-heading tracking-normal
+    @apply font-heading
   }
 }
 
@@ -63,16 +51,8 @@
     @apply px-4 md:px-8 lg:px-16;
   }
 
-  .nav-link-text {
-    @apply text-sm md:text-base lg:text-lg;
-  }
-
-  .heading-responsive {
-    @apply text-xl md:text-2xl lg:text-3xl font-heading font-bold;
-  }
-
-  .subheading-responsive {
-    @apply text-base md:text-lg lg:text-xl font-heading font-semibold;
+  .primary-color{
+    @apply text-[#7a7a7a];
   }
 
   .card-shadow {
@@ -81,8 +61,5 @@
                 rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     transition: transform 0.3s ease;
   }
-
-  .text-responsive {
-    @apply text-sm md:text-base lg:text-lg font-body;
-  }
 }
+

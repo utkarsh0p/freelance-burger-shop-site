@@ -1,64 +1,92 @@
-import {useNavigate } from "react-router-dom";
+import React from "react";
+import { logoTwo } from "../constants";
+import { useNavigate } from "react-router-dom";
+import { Facebook, Instagram, Youtube, Twitter } from "lucide-react";
 
 const Footer = () => {
+  const navigate = useNavigate();
 
-  const Navigate= useNavigate()
+  return (
+    <footer className="w-full bg-white text-black font-body border-t border-gray-200">
+      <div className="w-full px-4 sm:px-6 lg:px-12 py-10 grid gap-10 md:grid-cols-4">
+        
+        {/* Logo & Social */}
+        <div className="space-y-4">
+          <img src={logoTwo} alt="logo" className="w-28 h-auto" />
+          <p className="text-sm leading-relaxed">
+            CrushBurg is your go-to burger franchise serving mouth-watering
+            burgers, fries, and more — crafted to satisfy every craving.
+          </p>
+          <div className="space-y-2 text-sm">
+            <p className="font-medium">+91 70806 42899</p>
+            <p className="font-medium">support@crushburg.in</p>
+          </div>
+          <div className="flex gap-3 pt-2 flex-wrap">
+            <a href="#" className="w-10 h-10 flex items-center justify-center border rounded-full hover:bg-red-dark hover:text-white transition">
+              <Facebook size={18} />
+            </a>
+            <a href="#" className="w-10 h-10 flex items-center justify-center border rounded-full hover:bg-red-dark hover:text-white transition">
+              <Instagram size={18} />
+            </a>
+            <a href="#" className="w-10 h-10 flex items-center justify-center border rounded-full hover:bg-red-dark hover:text-white transition">
+              <Youtube size={18} />
+            </a>
+            <a href="#" className="w-10 h-10 flex items-center justify-center border rounded-full hover:bg-red-dark hover:text-white transition">
+              <Twitter size={18} />
+            </a>
+          </div>
+        </div>
 
-return (
-<footer className="footer footer-horizontal bg-black opacity-100 text-white ext-base-content p-10">
-  <nav>
-    <h6 className="footer-title text-red-dark opacity-100 tracking-wider">Services</h6>
-    <a onClick={() => Navigate("/menu")} className="link link-hover">Menu</a>
-    <a className="link link-hover">Order</a>
-    <a className="link link-hover">Locations</a>
-    <a className="link link-hover">Blog</a>
-  </nav>
-  <nav>
-    <h6 className="footer-title text-red-dark opacity-100 tracking-wider">Company</h6>
-    <a className="link link-hover">Stores</a>
-    <a className="link link-hover">About us</a>
-    <a className="link link-hover">Contact</a>
-    <a className="link link-hover">Privacy Policy</a>
-  </nav>
-  <nav>
-    <h6 className="footer-title text-red-dark opacity-100 tracking-wider">Social</h6>
-    <div className="grid grid-flow-col gap-4">
-      <a href="https://twitter.com/">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          className="fill-current">
-          <path
-            d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
-        </svg>
-      </a>
-      <a href="https://youtube.com/">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          className="fill-current">
-          <path
-            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
-        </svg>
-      </a>
-      <a href="https://www.facebook.com/">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          className="fill-current">
-          <path
-            d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
-        </svg>
-      </a>
-    </div>
-  </nav>
-</footer>
+        {/* Company Links */}
+        <div>
+          <h4 className="font-semibold mb-4">Our Company</h4>
+          <ul className="space-y-2 text-sm">
+            <li><button onClick={() => navigate("")}>Terms Of Use</button></li>
+            <li><button onClick={() => navigate("")}>Privacy Policy</button></li>
+            <li><button onClick={() => navigate("")}>About Us</button></li>
+            <li><button onClick={() => navigate("")}>Contact Us</button></li>
+            <li><button onClick={() => navigate("")}>FAQ</button></li>
+            <li><button onClick={() => navigate("")}>Store Location</button></li>
+          </ul>
+        </div>
+
+        {/* Shop Categories */}
+        <div>
+          <h4 className="font-semibold mb-4">Shop Categories</h4>
+          <ul className="space-y-2 text-sm">
+            <li><button onClick={() => navigate("")}>Burgers</button></li>
+            <li><button onClick={() => navigate("")}>Fries & Sides</button></li>
+            <li><button onClick={() => navigate("")}>Combos & Deals</button></li>
+            <li><button onClick={() => navigate("")}>Beverages</button></li>
+            <li><button onClick={() => navigate("")}>Desserts</button></li>
+            <li><button onClick={() => navigate("")}>Special Offers</button></li>
+          </ul>
+        </div>
+
+        {/* Newsletter */}
+        <div>
+          <h4 className="font-semibold mb-4">Sign Up to Newsletter</h4>
+          <p className="text-sm mb-4">
+            Get the latest updates, offers, and new menu items from CrushBurg.
+          </p>
+          <div className="flex w-full">
+            <input
+              type="email"
+              placeholder="Enter your email..."
+              className="flex-1 px-4 py-2 rounded-l-full border border-gray-300 focus:outline-none text-sm"
+            />
+            <button className="bg-black text-white px-6 rounded-r-full font-medium hover:bg-red-dark transition text-sm">
+              Subscribe
+            </button>
+          </div>
+          <p className="text-xs text-gray-600 mt-3 leading-snug">
+            ***By entering the e-mail you accept the{" "}
+            <span className="font-semibold">terms and conditions</span> and the{" "}
+            <span className="font-semibold">privacy policy</span>.
+          </p>
+        </div>
+      </div>
+    </footer>
   );
 };
 
