@@ -12,6 +12,8 @@ export const logoRed = "https://res.cloudinary.com/dff30apwl/image/upload/w_300,
 
 export const logoTwo = "https://res.cloudinary.com/dff30apwl/image/upload/w_300,f_auto,q_auto/v1757098033/CB_Logo_Transparent_rgv2df.png";
 
+export const navLogo = "https://res.cloudinary.com/dff30apwl/image/upload/w_300,f_auto,q_auto/v1758054996/main-logo_ejp6zq.jpg"
+
 export const logo = "https://res.cloudinary.com/dff30apwl/image/upload/w_300,f_auto,q_auto/v1757097853/ASERR_rcppln.png";
 
 export const logoName = "https://res.cloudinary.com/dff30apwl/image/upload/w_300,f_auto,q_auto/v1757098718/CrushBurg_Name_ai_1_mrjnq4.png";
@@ -66,6 +68,19 @@ export const wraps = "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_
 export const crusburgBrandingCard = "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757423273/04_sgsbph.jpg"
 
 export const cardBackground = "https://res.cloudinary.com/dff30apwl/image/upload/v1757441272/catagory-card-shape_prusnv.png"
+
+
+//shop pictures
+
+export const shop = "https://res.cloudinary.com/dff30apwl/image/upload/q_auto,f_auto/v1758050606/cbshop_hfxfyd.jpg"
+
+export const shop1="https://res.cloudinary.com/dff30apwl/image/upload/v1758050607/cbGala_sshfsi.jpg"
+
+export const shop2="https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1758050844/shop3_biz15b.jpg"
+
+export const shop3="https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1758051252/shop6_azzjll.jpg"
+
+export const shop4="https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1758063930/Screenshot_2025-09-17_043323_rcc1r0.png"
 
 export const menu = {
   burgers: [

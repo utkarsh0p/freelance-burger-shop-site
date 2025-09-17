@@ -27,9 +27,9 @@ const Store = () => {
           Our Stores
         </h2>
         <p className="font-sub font-bold text-md md:text-lg leading-relaxed">
-          From sizzling grills in downtown streets to cozy corners uptown, CrushBurg 
-          is always nearby to serve you fresh, bold flavors. Find your nearest spot and 
-          join the burger revolution!
+          From sizzling grills in downtown streets to cozy corners uptown,
+          CrushBurg is always nearby to serve you fresh, bold flavors. Find your
+          nearest spot and join the burger revolution!
         </p>
       </div>
 
@@ -101,7 +101,7 @@ const Store = () => {
           Want CrushBurg in Your Area?
         </h3>
         <p className="mb-6 text-gray-700 max-w-2xl mx-auto">
-          We're expanding fast! Join our growing family of stores and bring the 
+          We're expanding fast! Join our growing family of stores and bring the
           CrushBurg experience to your community.
         </p>
         <SlideButton value="Franchise With Us" url="/contact" />

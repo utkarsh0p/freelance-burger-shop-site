@@ -1,7 +1,11 @@
 import React from "react";
-import { heroBanner,crusburgBrandingCard } from "../constants";
+import { heroBanner,crusburgBrandingCard ,shop, shop1,shop2,shop3,shop4} from "../constants";
 import ProductCarousel from "../components/ProductCarousel.jsx";
+import { useNavigate } from "react-router-dom";
+
 const HomePage = () => {
+
+  const navigate = useNavigate();
   return (
     <div className="homepage primary-color font-body">
       <div
@@ -37,8 +41,8 @@ const HomePage = () => {
           </div>
         </div>
         {/* right div */}
-        <div className="w-full md:w-[49%] h-[30vh] md:h-[70vh]">
-          <img src={crusburgBrandingCard} className="w-full h-full object-cover my-8"  alt=""/>
+        <div className="w-full md:w-[49%] h-[40vh] md:h-[70vh]">
+          <img src={shop} className="w-full h-full object-cover my-8"  alt=""/>
         </div>
       </section>
       
@@ -51,21 +55,31 @@ const HomePage = () => {
          <ProductCarousel/>
       </section>
 
+    {/* shores section */}
       <section className="w-full padding-responsive py-8">
         <div className="flex flex-col items-center mb-8">
           <h1 className="text-2xl text-black font-bold font-heading">Our Stores</h1>
           <p>Closer than you think, may be nearer than you know</p>
         </div>
-        <div className="grid grid-cols-[repeat(3,minmax(0,1fr))] gap-4">
-          <div className="bg-red-600 h-50"></div>
-          <div className="bg-red-600 h-50"></div>
-          <div className="bg-red-600 h-50"></div>
+        <div className="grid grid-cols-[repeat(2,minmax(45vw,1fr))] md:grid-cols-[repeat(3,minmax(0,1fr))] gap-4">
+          <div className="bg-red-600 h-auto md:hidden">
+            <img src={shop4} alt="shop-picture"  className="w-full h-full object-cover"/>
+          </div>
+          <div className="bg-red-600 h-auto">
+            <img src={shop2} alt="shop-picture"  className="w-full h-full object-cover"/>
+          </div>
+          <div className="bg-red-600 h-auto">
+            <img src={shop1} alt="shop-picture" className="h-full w-full object-cover"/>
+          </div>
+          <div className="bg-red-600 h-auto">
+            <img src={shop3} alt="shop-picture" className="h-full w-full object-cover"/>
+          </div>
         </div>
         <div className="flex justify-center items-center">
-          <button className="bg-red-dark text-white px-4 py-2 rounded-full mt-8 cursor-pointer">Locate nearby Stores</button>
+          <button className="bg-red-dark text-white px-4 py-2 rounded-full mt-8 cursor-pointer" onClick={() => navigate("/store")}>Locate nearby Stores</button>
         </div>
 
-        <div className="my-8">
+        <div className="mt-8 md:mt-24">
           <div className="grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1 rounded-2xl overflow-hidden md:h-[80vh]">
             {/* Left Text Section */}
             <div className="bg-offwhite p-10 primary-color">
@@ -82,16 +96,16 @@ const HomePage = () => {
                 <li>Proven business growth model</li>
                 <li>Strong marketing & brand presence</li>
               </ul>
-              <button className="mt-6 bg-red-dark text-white px-6 py-3 rounded-full font-semibold w-fit cursor-pointer">
+              <button className="mt-6 bg-red-dark text-white px-6 md:py-3 rounded-full font-semibold w-fit cursor-pointer">
                 Apply For A Franchise
               </button>
             </div>
             {/* Right Image Section */}
             <div className="relative">
               <img 
-                src={crusburgBrandingCard}
+                src={shop}
                 alt="Crushburg Shop" 
-                className="w-full object-cover" 
+                className="w-full h-full object-cover" 
               />
             </div>
           </div>

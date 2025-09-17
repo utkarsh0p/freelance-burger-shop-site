@@ -6,6 +6,7 @@ import Contacts from "./pages/Contacts.jsx"
 import Store from "./pages/Store.jsx"
 import Navbar from "./components/Navbar.jsx"
 import Footer from "./components/Footer.jsx"
+import Franchise from "./pages/Franchise.jsx"
 
 function App() {
   return(
@@ -17,6 +18,7 @@ function App() {
         <Route path="/menu" element={<Menu/>}/>
         <Route path="/aboutus" element={<AboutUs/>}/>
         <Route path="/contact" element={<Contacts/>}/>
+        <Route path="/franchise" element={<Franchise/>}/>
       </Routes>
       <Footer/>
     </div>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { logoTwo } from "../constants";
-import { Search, User, Heart, ShoppingCart, Menu, X, Home, Store } from "lucide-react";
+import { logoTwo ,navLogo,logoName} from "../constants";
+import { Search, User, Heart, ShoppingCart, Menu, X, Home, Store} from "lucide-react";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
@@ -12,7 +12,7 @@ const Navbar = () => {
     { to: "/menu", label: "Menu" },
     { to: "/aboutus", label: "About Us" },
     { to: "/contact", label: "Contact Us" },
-    { to: "/blogs", label: "Blogs" },
+    { to: "/franchise", label: "Franchise" },
   ];
 
   return (
@@ -23,9 +23,10 @@ const Navbar = () => {
           <Menu onClick={() => setOpen(true)} className="w-7 h-7 cursor-pointer" />
         </div>
 
+        
         {/* Logo */}
         <div className="w-20 md:w-24 flex-shrink-0 absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0">
-          <img src={logoTwo} alt="logo" className="w-full h-auto object-contain" />
+          <img src={navLogo} alt="logo" className="w-full h-auto object-contain" />
         </div>
 
         {/* Desktop NavLinks */}
