@@ -1,5 +1,5 @@
 import React from "react";
-import { heroBanner,crusburgBrandingCard ,shop, shop1,shop2,shop3,shop4} from "../constants";
+import { heroBanner,crusburgBrandingCard ,shop, shop1,shop2,shop3,shop4,shopAiImage, shopAiImage2} from "../constants";
 import ProductCarousel from "../components/ProductCarousel.jsx";
 import { useNavigate } from "react-router-dom";
 
@@ -17,7 +17,7 @@ const HomePage = () => {
       <section className="padding-responsive flex flex-col md:flex-row h-auto mb-18">
         {/* left div */}
         <div className="w-[100%] md:w-[49%] h-auto">
-          <h1 className="text-2xl md:text-4xl text-black font-bold font-heading my-8">
+          <h1 className="text-xl md:text-3xl text-black font-bold font-heading my-8">
             Welcome to CrushBurg — Where Cravings Get Crushed
           </h1>
           <p>
@@ -28,10 +28,10 @@ const HomePage = () => {
             bring the taste, you bring the appetite.
           </p>
           <div>
-            <h2 className="text-xl md:text-2xl text-black font-medium font-heading my-4">
+            <h2 className="text-lg md:text-xl text-black font-medium font-heading my-4">
               Why People Love Us:
             </h2>
-            <ul className="list-disc list-inside space-y-3 text-[14px] md:text-lg">
+            <ul className="list-disc list-inside space-y-3 text-[12px] md:text-[16px]">
               <li>Juicy burgers stacked with fresh toppings</li>
               <li>Flavor-packed wraps and grilled sandwiches</li>
               <li>Perfect hangout spot for friends, late-night bites</li>
@@ -42,7 +42,7 @@ const HomePage = () => {
         </div>
         {/* right div */}
         <div className="w-full md:w-[49%] h-[40vh] md:h-[70vh]">
-          <img src={shop} className="w-full h-full object-cover my-8"  alt=""/>
+          <img src={shopAiImage} className="w-full h-full object-cover my-8"  alt="Image-shop"/>
         </div>
       </section>
       
@@ -83,27 +83,27 @@ const HomePage = () => {
           <div className="grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1 rounded-2xl overflow-hidden md:h-[80vh]">
             {/* Left Text Section */}
             <div className="bg-offwhite p-10 primary-color">
-              <h1 className="mb-4 text-black text-2xl font-bold">
+              <h1 className="mb-4 text-black text-xl md:text-3xl font-bold">
                 From Our Grill to Your Plate
               </h1>
-              <p className="mb-6 text-lg">
+              <p className="mb-6">
                 Join the Crushburg family and be a part of the fastest-growing burger & wraps brand. 
                 We serve more than food — we serve love, taste, and an experience worth coming back for.
               </p>
-              <ul className="list-disc list-inside space-y-2">
+              <ul className="list-disc list-inside text-[12px] md:text-[16px] space-y-2">
                 <li>Freshly grilled burgers & handcrafted wraps</li>
                 <li>Easy franchise setup & full training support</li>
                 <li>Proven business growth model</li>
                 <li>Strong marketing & brand presence</li>
               </ul>
-              <button className="mt-6 bg-red-dark text-white px-6 md:py-3 rounded-full font-semibold w-fit cursor-pointer">
+              <button className="mt-6 bg-red-dark py-3 text-white px-6 md:py-3 rounded-full font-semibold w-fit cursor-pointer">
                 Apply For A Franchise
               </button>
             </div>
             {/* Right Image Section */}
             <div className="relative">
               <img 
-                src={shop}
+                src={shopAiImage2}
                 alt="Crushburg Shop" 
                 className="w-full h-full object-cover" 
               />

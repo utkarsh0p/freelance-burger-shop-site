@@ -82,6 +82,10 @@ export const shop3="https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_au
 
 export const shop4="https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1758063930/Screenshot_2025-09-17_043323_rcc1r0.png"
 
+export const shopAiImage = "https://res.cloudinary.com/dff30apwl/image/upload/f_auto,q_auto/v1759142205/WhatsApp_Image_2025-09-20_at_17.47.28_70885e53_xpjvrm.jpg"
+
+export const shopAiImage2 = "https://res.cloudinary.com/dff30apwl/image/upload/f_auto,q_auto/v1759142202/WhatsApp_Image_2025-09-20_at_17.47.29_18efd7d9_nlfk8z.jpg"
+
 export const menu = {
   burgers: [
     { name: "Lite Burger", prices: [39, 49] },

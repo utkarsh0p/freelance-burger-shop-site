@@ -9,7 +9,7 @@ const Store = () => {
       address:
         "Antas Shopping Mall & Multiplex, 1/23, Vardan Khand, Sector 1, Gomti Nagar, Makhdoom Pur, Lucknow, Uttar Pradesh 226010",
       hours: "Mon-Sun: 10am - 10pm",
-      img: shop1,
+      img: shop4,
       link: "https://maps.app.goo.gl/F8Yws6k11H64R5Qi9",
       embed:
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3560.1165454419606!2d81.0020255!3d26.836245200000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399be31dba0ac875%3A0xf19bf79fa8163041!2sCrushBurg!5e0!3m2!1sen!2sin!4v1758106580789!5m2!1sen!2sin",
@@ -19,7 +19,7 @@ const Store = () => {
       address:
         "UGF, Bhawani, Meena Market, Liberty Colony Park, Indira Nagar, Lucknow, Uttar Pradesh 226016",
       hours: "Mon-Sun: 11am - 11pm",
-      img: shop4,
+      img: shop1,
       link: "https://maps.app.goo.gl/mNM34hANXA2bq9u37",
       embed:
         "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.8171785023615!2d80.9763033!3d26.877548999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399bfd4044cd7bd7%3A0x93a6f8c769605264!2sCrushBurg!5e0!3m2!1sen!2sin!4v1758106333320!5m2!1sen!2sin",

@@ -17,7 +17,7 @@ import {
   Briefcase,
 } from "lucide-react";
 
-const WHATSAPP_NUMBER = "+919794056664";
+const WHATSAPP_NUMBER = "+917619910103";
 const MANUAL_LINK =
   "https://drive.google.com/file/d/1aUAn9DMq6G1CiqbuQyeLF6q-KbaQb6g3/view?usp=sharing";
 
