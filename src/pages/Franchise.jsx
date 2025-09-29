@@ -55,7 +55,7 @@ const Franchise = () => {
     <main className="bg-white text-gray-800">
       {/* HERO */}
       <header className="bg-red-dark text-white text-center py-16 px-6">
-        <h1 className="text-3xl md:text-5xl font-heading font-bold mb-3">
+        <h1 className="font-heading font-bold mb-3 heading">
           Own a CrushBurg Franchise
         </h1>
         <p className="max-w-3xl mx-auto mb-6 leading-relaxed font-sub">
@@ -78,7 +78,7 @@ const Franchise = () => {
 
       {/* PILLARS */}
       <section className="max-w-7xl mx-auto px-6 py-16">
-        <h2 className="text-2xl md:text-3xl font-heading text-center text-red-dark mb-10">
+        <h2 className="font-heading text-center text-red-dark mb-10">
           Our Mission & Business Pillars
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
@@ -282,6 +282,7 @@ const Franchise = () => {
 };
 
 export default Franchise;
+
 
 
 

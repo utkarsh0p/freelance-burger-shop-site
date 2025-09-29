@@ -23,13 +23,13 @@ const Contact = () => {
   };
 
   return (
-    <section className="max-w-7xl mx-auto px-6 py-16 space-y-20">
+    <section className="max-w-7xl mx-auto px-6 py-8 space-y-20">
       {/* Page Heading */}
       <div className="text-center mb-12">
-        <h2 className="text-3xl md:text-4xl font-heading text-red-dark font-bold mb-6">
+        <h2 className="heading text-red-dark font-heading font-bold mb-6">
           Contact Us
         </h2>
-        <p className="text-lg font-sub text-gray-700 max-w-2xl mx-auto leading-relaxed">
+        <p className="para font-sub text-gray-700 max-w-2xl mx-auto leading-relaxed">
           Have a question, feedback, or just want to say hello? We’d love to
           hear from you. Reach out through the form or our contact details
           below.
@@ -41,8 +41,10 @@ const Contact = () => {
         {/* Address */}
         <div className="bg-offwhite p-8 text-center shadow-md rounded-2xl hover:shadow-lg transition">
           <MapPin className="mx-auto mb-4 text-red-dark" size={36} />
-          <h3 className="font-heading text-lg font-semibold mb-2">Address</h3>
-          <p className="text-gray-700 font-sub leading-relaxed">
+          <h3 className="heading text-lg font-heading font-semibold mb-2">
+            Address
+          </h3>
+          <p className="para text-gray-700 font-sub leading-relaxed">
             Crown Mall, Lucknow <br /> Uttar Pradesh, India
           </p>
         </div>
@@ -50,28 +52,29 @@ const Contact = () => {
         {/* Phone */}
         <div className="bg-offwhite p-8 text-center shadow-md rounded-2xl hover:shadow-lg transition">
           <Phone className="mx-auto mb-4 text-red-dark" size={36} />
-          <h3 className="font-heading text-lg font-semibold mb-2">Phone</h3>
-          <p className="text-gray-700 font-sub leading-relaxed">
-            +91 979405666X
-          </p>
+          <h3 className="heading text-lg font-heading font-semibold mb-2">
+            Phone
+          </h3>
+          <p className="para text-gray-700 font-sub leading-relaxed">+917619910103</p>
         </div>
 
         {/* Mail */}
         <div className="bg-offwhite p-8 text-center shadow-md rounded-2xl hover:shadow-lg transition">
           <Mail className="mx-auto mb-4 text-red-dark" size={36} />
-          <h3 className="font-heading text-lg font-semibold mb-2">Email</h3>
-          <p className="text-gray-700 font-sub leading-relaxed">
-            team.crushburg@gmail.com
+          <h3 className="heading text-lg font-heading font-semibold mb-2">
+            Email
+          </h3>
+          <p className="para text-gray-700 font-sub leading-relaxed">connect@crushburg.com
           </p>
         </div>
       </div>
 
-      {/* Contact Form - Centered */}
+      {/* Contact Form */}
       <div className="bg-white shadow-md rounded-2xl p-8 w-full max-w-2xl mx-auto">
-        <h2 className="text-2xl font-heading text-red-dark font-semibold mb-4 text-center">
+        <h2 className="heading text-red-dark font-heading font-semibold mb-4 text-center">
           Send Us a Message
         </h2>
-        <p className="text-gray-700 mb-6 font-sub leading-relaxed text-center">
+        <p className="para text-gray-700 mb-6 font-sub leading-relaxed text-center">
           Fill out the form below and we’ll get back to you as soon as
           possible.
         </p>
@@ -143,6 +146,7 @@ const Contact = () => {
 };
 
 export default Contact;
+
 
 
 

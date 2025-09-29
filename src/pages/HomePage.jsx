@@ -7,9 +7,9 @@ const HomePage = () => {
 
   const navigate = useNavigate();
   return (
-    <div className="homepage primary-color font-body">
+    <div className="homepage primary-color">
       <div
-        className="banner w-[100%] h-[20vh] md:h-[50vh] lg:h-[70vh] bg-red-dark bg-cover bg-center"
+        className="banner w-[100%] h-[23vh] md:h-[50vh] lg:h-[70vh] bg-red-dark bg-cover bg-center"
         style={{ backgroundImage: `url(${heroBanner})` }}
       ></div>
 
@@ -18,7 +18,7 @@ const HomePage = () => {
         {/* left div */}
         <div className="w-[100%] md:w-[49%] h-auto">
           <h1 className="text-xl md:text-3xl text-black font-bold font-heading mt-8 mb-4">
-            Welcome to CrushBurg — Where Cravings Get Crushed
+            Welcome to CrushBurg
           </h1>
           <p>
             At CrushBurg, every bite is built to impress. From flame-kissed

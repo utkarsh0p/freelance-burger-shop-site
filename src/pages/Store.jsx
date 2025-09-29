@@ -27,7 +27,7 @@ const Store = () => {
   ];
 
   return (
-    <section className="max-w-6xl mx-auto px-6 py-16 text-responsive bg-white font-body">
+    <section className="max-w-6xl mx-auto px-6 py-10 text-responsive bg-white font-body">
       {/* Intro */}
       <div className="text-center max-w-3xl mx-auto mb-16">
         <h2 className="text-2xl font-bold md:text-4xl mb-4 text-red-600 font-heading">
@@ -60,12 +60,16 @@ const Store = () => {
 
             {/* Content */}
             <div className="md:w-1/2 w-full bg-offwhite shadow-lg p-8 rounded-xl flex flex-col">
-              <h3 className="font-heading text-2xl md:text-3xl mb-4 text-red-600">
+              <h3 className="font-heading text-2xl md:text-3xl mb-4 text-red-600 heading">
                 {store.name}
               </h3>
-              <p className="text-gray-700 mb-2">{store.address}</p>
-              <p className="text-gray-700 mb-6">{store.hours}</p>
-              <SlideButton value="Get Directions" url={store.link} />
+              <p className="text-gray-700 mb-2 para">{store.address}</p>
+              <p className="text-gray-700 mb-6 para">{store.hours}</p>
+
+              {/* <-- WRAPPER ADDED: keeps button its natural size on mobile */}
+              <div className="mt-2 w-max self-start">
+                <SlideButton value="Get Directions" url={store.link} />
+              </div>
 
               {/* Embedded map */}
               <div className="mt-6 w-full h-64 shadow-md">
@@ -85,27 +89,31 @@ const Store = () => {
 
       {/* Visit Us */}
       <div className="text-center max-w-2xl mx-auto mb-20 bg-offwhite shadow-lg p-8 rounded-xl">
-        <h3 className="text-xl md:text-2xl mb-4 text-red-600 font-heading">
+        <h3 className="text-xl md:text-2xl mb-4 text-red-600 font-heading heading">
           Visit Us
         </h3>
-        <p className="mb-2 font-sub font-semibold">
+        <p className="mb-2 font-sub font-semibold para">
           Our friendly staff is ready to serve you at any of our locations.
         </p>
-        <p className="text-gray-700">
+        <p className="text-gray-700 para">
           Open every day with delicious meals waiting for you!
         </p>
       </div>
 
       {/* CTA Section */}
       <div className="bg-offwhite shadow-lg p-10 text-center rounded-xl">
-        <h3 className="text-2xl md:text-3xl mb-4 text-red-600 font-heading">
+        <h3 className="text-2xl md:text-3xl mb-4 text-red-600 font-heading heading">
           Want CrushBurg in Your Area?
         </h3>
-        <p className="mb-6 text-gray-700 max-w-2xl mx-auto">
+        <p className="mb-6 text-gray-700 max-w-2xl para  mx-auto">
           We're expanding fast! Join our growing family of stores and bring the
           CrushBurg experience to your community.
         </p>
-        <SlideButton value="Franchise With Us" url="/franchise" />
+
+        {/* CTA button wrapper too */}
+        <div className="mt-4 inline-block">
+          <SlideButton value="Franchise With Us" url="/franchise" />
+        </div>
       </div>
     </section>
   );

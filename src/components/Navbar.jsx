@@ -17,7 +17,8 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="text-black flex items-center justify-between px-4 md:px-8 py-3 font-body relative mt-6 md:mt-0 mb-5 md:mb-0">
+<nav className="shadow-md md:shadow-lg text-black flex items-center justify-between px-4 md:px-8 py-3 font-body pb-6 md:pb-3 relative mt-6 md:mt-0 md:mb-0">
+
         {/* Mobile: Left menu button */}
         <div className="md:hidden">
           <Menu onClick={() => setOpen(true)} className="w-7 h-7 cursor-pointer" />

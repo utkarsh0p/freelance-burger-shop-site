@@ -18,8 +18,8 @@ const Footer = () => {
             burgers, fries, and more — crafted to satisfy every craving.
           </p>
           <div className="space-y-2 text-sm">
-            <p className="font-medium">+91 70806 42899</p>
-            <p className="font-medium">support@crushburg.in</p>
+            <p className="font-medium">+917619910103</p>
+            <p className="font-medium">connect@crushburg.com</p>
           </div>
           <div className="flex gap-3 pt-2 flex-wrap">
             <a href="#" className="w-10 h-10 flex items-center justify-center border rounded-full hover:bg-red-dark hover:text-white transition">
@@ -39,7 +39,7 @@ const Footer = () => {
 
         {/* Company Links */}
         <div>
-          <h4 className="font-semibold mb-4">Our Company</h4>
+          <h4 className="font-semibold mb-4 text-lg md:text-xl">Our Company</h4>
           <ul className="space-y-2 text-sm">
             <li><button onClick={() => navigate("")}>Terms Of Use</button></li>
             <li><button onClick={() => navigate("")}>Privacy Policy</button></li>
@@ -52,7 +52,7 @@ const Footer = () => {
 
         {/* Shop Categories */}
         <div>
-          <h4 className="font-semibold mb-4">Shop Categories</h4>
+          <h4 className="font-semibold mb-4 text-lg text-x">Shop Categories</h4>
           <ul className="space-y-2 text-sm">
             <li><button onClick={() => navigate("")}>Burgers</button></li>
             <li><button onClick={() => navigate("")}>Fries & Sides</button></li>
@@ -65,7 +65,7 @@ const Footer = () => {
 
         {/* Newsletter */}
         <div>
-          <h4 className="font-semibold mb-4">Sign Up to Newsletter</h4>
+          <h4 className="font-semibold mb-4 text-lg text-x">Sign Up to Newsletter</h4>
           <p className="text-sm mb-4">
             Get the latest updates, offers, and new menu items from CrushBurg.
           </p>

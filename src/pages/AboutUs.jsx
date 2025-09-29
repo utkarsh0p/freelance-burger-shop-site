@@ -4,13 +4,13 @@ import SlideButton from "../components/SlideButton";
 
 const AboutUs = () => {
   return (
-    <section className="max-w-7xl mx-auto px-6 py-16 space-y-24">
+    <section className="max-w-7xl mx-auto px-6 mt-8 space-y-24">
       {/* Page Heading */}
-      <div className="text-center mb-16">
-        <h2 className="text-3xl md:text-4xl font-heading text-red-dark font-bold mb-6">
+      <div className="text-center mb-8">
+        <h2 className="heading text-red-dark font-heading font-bold mb-6">
           About Us
         </h2>
-        <p className="text-lg font-sub text-gray-700 max-w-2xl mx-auto leading-relaxed">
+        <p className="para font-sub text-gray-700 max-w-2xl mx-auto leading-relaxed">
           At CrushBurg, we believe in serving more than just food – we serve
           experiences. From fresh ingredients to bold flavors, every bite is
           crafted with love and passion.
@@ -20,10 +20,10 @@ const AboutUs = () => {
       {/* Section 1 */}
       <div className="grid md:grid-cols-2 gap-12 items-center bg-offwhite shadow-md rounded-2xl p-8">
         <div>
-          <h3 className="text-2xl font-heading text-red-dark font-semibold mb-4">
+          <h3 className="heading text-red-dark font-heading font-semibold mb-4">
             Our Story
           </h3>
-          <p className="text-gray-700 mb-6 font-sub leading-relaxed">
+          <p className="para text-gray-700 mb-6 font-sub leading-relaxed">
             Starting as a small food joint, CrushBurg has grown into a place
             where people come together to enjoy great food and great vibes. Our
             mission is simple – deliver mouthwatering burgers, sandwiches, and
@@ -50,10 +50,10 @@ const AboutUs = () => {
           />
         </div>
         <div className="md:order-2 order-1">
-          <h3 className="text-2xl font-heading text-red-dark font-semibold mb-4">
+          <h3 className="heading text-red-dark font-heading font-semibold mb-4">
             What We Serve
           </h3>
-          <p className="text-gray-700 mb-6 font-sub leading-relaxed">
+          <p className="para text-gray-700 mb-6 font-sub leading-relaxed">
             From juicy burgers to crispy fries and refreshing drinks – every
             item on our menu is made to satisfy. Whether you’re dining in or
             ordering out, we bring the same quality and flavor to your table.
@@ -65,10 +65,10 @@ const AboutUs = () => {
       {/* Section 3 */}
       <div className="grid md:grid-cols-2 gap-12 items-center bg-offwhite shadow-md rounded-2xl p-8">
         <div>
-          <h3 className="text-2xl font-heading text-red-dark font-semibold mb-4">
+          <h3 className="heading text-red-dark font-heading font-semibold mb-4">
             Our Promise
           </h3>
-          <p className="text-gray-700 mb-6 font-sub leading-relaxed">
+          <p className="para text-gray-700 mb-6 font-sub leading-relaxed">
             We are committed to freshness, taste, and service. Every meal is
             made with high-quality ingredients and served with care. Our goal is
             to give you an experience worth remembering, every single time.
@@ -88,3 +88,4 @@ const AboutUs = () => {
 };
 
 export default AboutUs;
+
