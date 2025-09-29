@@ -35,7 +35,7 @@ const ProductCarousel = () => {
     },
     {
       title: "Paneer Wrap",
-      desc: "Delightful Indian twist in every bite",
+      desc: "Delightful Indian twist",
       img: paneerWrap,
       btn: "Wraps",
     },
@@ -53,7 +53,7 @@ const ProductCarousel = () => {
     },
     {
       title: "Veg Wrap",
-      desc: "Fresh veggies packed in a soft wrap",
+      desc: "Veggies packed in a soft wrap",
       img: vegWrap,
       btn: "Wraps",
     },
@@ -93,8 +93,8 @@ const ProductCarousel = () => {
 
               {/* Content */}
               <div className="p-4 flex flex-col gap-2">
-                <h2 className="text-lg font-semibold text-gray-800">{cat.title}</h2>
-                <p className="text-sm text-gray-500">{cat.desc}</p>
+                <h2 className="para font-semibold text-gray-800">{cat.title}</h2>
+                <p className=" text-gray-500 para mb-2">{cat.desc}</p>
                 <button
                   onClick={handleNavigate}
                   className="bg-red-600 text-white py-2 px-5 rounded-full hover:bg-red-700 transition"

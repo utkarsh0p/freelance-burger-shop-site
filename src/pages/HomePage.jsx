@@ -17,26 +17,24 @@ const HomePage = () => {
       <section className="padding-responsive flex flex-col md:flex-row h-auto mb-18">
         {/* left div */}
         <div className="w-[100%] md:w-[49%] h-auto">
-          <h1 className="text-xl md:text-3xl text-black font-bold font-heading my-8">
+          <h1 className="text-xl md:text-3xl text-black font-bold font-heading mt-8 mb-4">
             Welcome to CrushBurg — Where Cravings Get Crushed
           </h1>
           <p>
             At CrushBurg, every bite is built to impress. From flame-kissed
             burgers and smoky chicken wraps to gooey grilled sandwiches and
-            crunchy sides, our menu balances comfort with bold flavor. Drop in
-            for a quick lunch, a late-night feast, or a chilled hangout — we’ll
-            bring the taste, you bring the appetite.
+            crunchy sides, our menu balances comfort with bold flavor.
           </p>
           <div>
             <h2 className="text-lg md:text-xl text-black font-medium font-heading my-4">
               Why People Love Us:
             </h2>
-            <ul className="list-disc list-inside space-y-3 text-[12px] md:text-[16px]">
+            <ul className="list-disc list-inside space-y-3 text-[14px] md:text-[16px]">
               <li>Juicy burgers stacked with fresh toppings</li>
               <li>Flavor-packed wraps and grilled sandwiches</li>
               <li>Perfect hangout spot for friends, late-night bites</li>
               <li>Quality ingredients sourced with care</li>
-              <li>Events & offers that bring the community together</li>
+              <li>Exciting events & offers.</li>
             </ul>
           </div>
         </div>
@@ -49,17 +47,17 @@ const HomePage = () => {
       {/* menu section */}
       <section className="w-full padding-responsive py-8 bg-offwhite">
         <div className="flex flex-col items-center mb-8">
-          <h1 className="text-2xl text-black font-bold font-heading">Our Menu</h1>
+          <h1 className="text-xl md:text-3xl text-black font-bold font-heading">Our Menu</h1>
           <p>A menu crafted to satisfy every craving</p>
         </div>
          <ProductCarousel/>
       </section>
 
     {/* shores section */}
-      <section className="w-full padding-responsive py-8">
+      <section className="w-full pl-3 pr-3 py-8">
         <div className="flex flex-col items-center mb-8">
-          <h1 className="text-2xl text-black font-bold font-heading">Our Stores</h1>
-          <p>Closer than you think, may be nearer than you know</p>
+          <h1 className="heading text-black font-bold font-heading">Our Stores</h1>
+          <p>Closer than you think</p>
         </div>
         <div className="grid grid-cols-[repeat(2,minmax(45vw,1fr))] md:grid-cols-[repeat(3,minmax(0,1fr))] gap-4">
           <div className="bg-red-600 h-auto md:hidden">
@@ -76,27 +74,26 @@ const HomePage = () => {
           </div>
         </div>
         <div className="flex justify-center items-center">
-          <button className="bg-red-dark text-white px-4 py-2 rounded-full mt-8 cursor-pointer" onClick={() => navigate("/store")}>Locate nearby Stores</button>
+          <button className="bg-red-dark text-white px-4 py-2 rounded-full mt-8 cursor-pointer para" onClick={() => navigate("/store")}>Locate nearby Stores</button>
         </div>
 
         <div className="mt-8 md:mt-24">
-          <div className="grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1 rounded-2xl overflow-hidden md:h-[80vh]">
+          <div className="grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-1  overflow-hidden md:h-[80vh]">
             {/* Left Text Section */}
             <div className="bg-offwhite p-10 primary-color">
               <h1 className="mb-4 text-black text-xl md:text-3xl font-bold">
                 From Our Grill to Your Plate
               </h1>
               <p className="mb-6">
-                Join the Crushburg family and be a part of the fastest-growing burger & wraps brand. 
-                We serve more than food — we serve love, taste, and an experience worth coming back for.
+                Join the Crushburg family and be a part of the fastest-growing burger & wraps brand.
               </p>
-              <ul className="list-disc list-inside text-[12px] md:text-[16px] space-y-2">
-                <li>Freshly grilled burgers & handcrafted wraps</li>
-                <li>Easy franchise setup & full training support</li>
+              <ul className="list-disc list-inside para space-y-2">
+                <li>Freshly grilled burgers and wraps</li>
+                <li>Easy franchise setup & full support</li>
                 <li>Proven business growth model</li>
                 <li>Strong marketing & brand presence</li>
               </ul>
-              <button className="mt-6 bg-red-dark py-3 text-white px-6 md:py-3 rounded-full font-semibold w-fit cursor-pointer">
+              <button className="mt-6 bg-red-dark py-2 text-white px-6 md:py-3 rounded-full font-semibold w-fit cursor-pointer para">
                 Apply For A Franchise
               </button>
             </div>
@@ -105,7 +102,7 @@ const HomePage = () => {
               <img 
                 src={shopAiImage2}
                 alt="Crushburg Shop" 
-                className="w-full h-full object-cover" 
+                className="w-full h-full object-fit" 
               />
             </div>
           </div>

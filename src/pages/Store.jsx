@@ -27,13 +27,13 @@ const Store = () => {
   ];
 
   return (
-    <section className="max-w-6xl mx-auto px-6 py-16 text-responsive bg-white">
+    <section className="max-w-6xl mx-auto px-6 py-16 text-responsive bg-white font-body">
       {/* Intro */}
       <div className="text-center max-w-3xl mx-auto mb-16">
-        <h2 className="text-3xl md:text-4xl mb-4 text-red-600 font-heading">
+        <h2 className="text-2xl font-bold md:text-4xl mb-4 text-red-600 font-heading">
           Our Stores
         </h2>
-        <p className="font-sub font-bold text-md md:text-lg leading-relaxed">
+        <p className="para text-md md:text-lg leading-relaxed">
           From sizzling grills in downtown streets to cozy corners uptown,
           CrushBurg is always nearby to serve you fresh, bold flavors. Find your
           nearest spot and join the burger revolution!
