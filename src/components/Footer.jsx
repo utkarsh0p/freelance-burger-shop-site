@@ -9,7 +9,6 @@ const Footer = () => {
   return (
     <footer className="w-full bg-white text-black font-body border-t border-gray-200">
       <div className="w-full px-4 sm:px-6 lg:px-12 py-10 grid gap-10 md:grid-cols-4">
-        
         {/* Logo & Social */}
         <div className="space-y-4">
           <img src={logoTwo} alt="logo" className="w-28 h-auto" />
@@ -22,16 +21,28 @@ const Footer = () => {
             <p className="font-medium">connect@crushburg.com</p>
           </div>
           <div className="flex gap-3 pt-2 flex-wrap">
-            <a href="#" className="w-10 h-10 flex items-center justify-center border rounded-full hover:bg-red-dark hover:text-white transition">
+            <a
+              href="#"
+              className="w-10 h-10 flex items-center justify-center border rounded-full hover:bg-red-dark hover:text-white transition"
+            >
               <Facebook size={18} />
             </a>
-            <a href="#" className="w-10 h-10 flex items-center justify-center border rounded-full hover:bg-red-dark hover:text-white transition">
+            <a
+              href="#"
+              className="w-10 h-10 flex items-center justify-center border rounded-full hover:bg-red-dark hover:text-white transition"
+            >
               <Instagram size={18} />
             </a>
-            <a href="#" className="w-10 h-10 flex items-center justify-center border rounded-full hover:bg-red-dark hover:text-white transition">
+            <a
+              href="#"
+              className="w-10 h-10 flex items-center justify-center border rounded-full hover:bg-red-dark hover:text-white transition"
+            >
               <Youtube size={18} />
             </a>
-            <a href="#" className="w-10 h-10 flex items-center justify-center border rounded-full hover:bg-red-dark hover:text-white transition">
+            <a
+              href="#"
+              className="w-10 h-10 flex items-center justify-center border rounded-full hover:bg-red-dark hover:text-white transition"
+            >
               <Twitter size={18} />
             </a>
           </div>
@@ -41,12 +52,28 @@ const Footer = () => {
         <div>
           <h4 className="font-semibold mb-4 text-lg md:text-xl">Our Company</h4>
           <ul className="space-y-2 text-sm">
-            <li><button onClick={() => navigate("")}>Terms Of Use</button></li>
-            <li><button onClick={() => navigate("")}>Privacy Policy</button></li>
-            <li><button onClick={() => navigate("")}>About Us</button></li>
-            <li><button onClick={() => navigate("")}>Contact Us</button></li>
-            <li><button onClick={() => navigate("")}>FAQ</button></li>
-            <li><button onClick={() => navigate("")}>Store Location</button></li>
+            <li>
+              <button onClick={() => navigate("/termsofuse")}>
+                Terms Of Use
+              </button>
+            </li>
+            <li>
+              <button onClick={() => navigate("/privacypolicy")}>
+                Privacy Policy
+              </button>
+            </li>
+            <li>
+              <button onClick={() => navigate("/aboutus")}>About Us</button>
+            </li>
+            <li>
+              <button onClick={() => navigate("/contact")}>Contact Us</button>
+            </li>
+            <li>
+              <button onClick={() => navigate("/faq")}>FAQ</button>
+            </li>
+            <li>
+              <button onClick={() => navigate("/store")}>Store Location</button>
+            </li>
           </ul>
         </div>
 
@@ -54,18 +81,32 @@ const Footer = () => {
         <div>
           <h4 className="font-semibold mb-4 text-lg text-x">Shop Categories</h4>
           <ul className="space-y-2 text-sm">
-            <li><button onClick={() => navigate("")}>Burgers</button></li>
-            <li><button onClick={() => navigate("")}>Fries & Sides</button></li>
-            <li><button onClick={() => navigate("")}>Combos & Deals</button></li>
-            <li><button onClick={() => navigate("")}>Beverages</button></li>
-            <li><button onClick={() => navigate("")}>Desserts</button></li>
-            <li><button onClick={() => navigate("")}>Special Offers</button></li>
+            <li>
+              <button onClick={() => navigate("/menu")}>Burgers</button>
+            </li>
+            <li>
+              <button onClick={() => navigate("/menu")}>Fries & Sides</button>
+            </li>
+            <li>
+              <button onClick={() => navigate("/menu")}>Combos & Deals</button>
+            </li>
+            <li>
+              <button onClick={() => navigate("/menu")}>Beverages</button>
+            </li>
+            <li>
+              <button onClick={() => navigate("/menu")}>Desserts</button>
+            </li>
+            <li>
+              <button onClick={() => navigate("/menu")}>Special Offers</button>
+            </li>
           </ul>
         </div>
 
         {/* Newsletter */}
         <div>
-          <h4 className="font-semibold mb-4 text-lg text-x">Sign Up to Newsletter</h4>
+          <h4 className="font-semibold mb-4 text-lg text-x">
+            Sign Up to Newsletter
+          </h4>
           <p className="text-sm mb-4">
             Get the latest updates, offers, and new menu items from CrushBurg.
           </p>

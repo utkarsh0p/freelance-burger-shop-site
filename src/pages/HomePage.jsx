@@ -1,10 +1,19 @@
 import React from "react";
-import { heroBanner,crusburgBrandingCard ,shop, shop1,shop2,shop3,shop4,shopAiImage, shopAiImage2} from "../constants";
+import {
+  heroBanner,
+  crusburgBrandingCard,
+  shop,
+  shop1,
+  shop2,
+  shop3,
+  shop4,
+  shopAiImage,
+  shopAiImage2,
+} from "../constants";
 import ProductCarousel from "../components/ProductCarousel.jsx";
 import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
-
   const navigate = useNavigate();
   return (
     <div className="homepage primary-color">
@@ -40,41 +49,70 @@ const HomePage = () => {
         </div>
         {/* right div */}
         <div className="w-full md:w-[49%] h-[40vh] md:h-[70vh]">
-          <img src={shopAiImage} className="w-full h-full object-cover my-8"  alt="Image-shop"/>
+          <img
+            src={shopAiImage}
+            className="w-full h-full object-cover my-8"
+            alt="Image-shop"
+          />
         </div>
       </section>
-      
+
       {/* menu section */}
       <section className="w-full padding-responsive py-8 bg-offwhite">
         <div className="flex flex-col items-center mb-8">
-          <h1 className="text-xl md:text-3xl text-black font-bold font-heading">Our Menu</h1>
+          <h1 className="text-xl md:text-3xl text-black font-bold font-heading">
+            Our Menu
+          </h1>
           <p>A menu crafted to satisfy every craving</p>
         </div>
-         <ProductCarousel/>
+        <ProductCarousel />
       </section>
 
-    {/* shores section */}
+      {/* shores section */}
       <section className="w-full pl-3 pr-3 py-8">
         <div className="flex flex-col items-center mb-8">
-          <h1 className="heading text-black font-bold font-heading">Our Stores</h1>
+          <h1 className="heading text-black font-bold font-heading">
+            Our Stores
+          </h1>
           <p>Closer than you think</p>
         </div>
         <div className="grid grid-cols-[repeat(2,minmax(45vw,1fr))] md:grid-cols-[repeat(3,minmax(0,1fr))] gap-4">
           <div className="bg-red-600 h-auto md:hidden">
-            <img src={shop4} alt="shop-picture"  className="w-full h-full object-cover"/>
+            <img
+              src={shop4}
+              alt="shop-picture"
+              className="w-full h-full object-cover"
+            />
           </div>
           <div className="bg-red-600 h-auto">
-            <img src={shop2} alt="shop-picture"  className="w-full h-full object-cover"/>
+            <img
+              src={shop2}
+              alt="shop-picture"
+              className="w-full h-full object-cover"
+            />
           </div>
           <div className="bg-red-600 h-auto">
-            <img src={shop1} alt="shop-picture" className="h-full w-full object-cover"/>
+            <img
+              src={shop1}
+              alt="shop-picture"
+              className="h-full w-full object-cover"
+            />
           </div>
           <div className="bg-red-600 h-auto">
-            <img src={shop3} alt="shop-picture" className="h-full w-full object-cover"/>
+            <img
+              src={shop3}
+              alt="shop-picture"
+              className="h-full w-full object-cover"
+            />
           </div>
         </div>
         <div className="flex justify-center items-center">
-          <button className="bg-red-dark text-white px-4 py-2 rounded-full mt-8 cursor-pointer para" onClick={() => navigate("/store")}>Locate nearby Stores</button>
+          <button
+            className="bg-red-dark text-white px-4 py-2 rounded-full mt-8 cursor-pointer para"
+            onClick={() => navigate("/store")}
+          >
+            Locate nearby Stores
+          </button>
         </div>
 
         <div className="mt-8 md:mt-24">
@@ -85,7 +123,8 @@ const HomePage = () => {
                 From Our Grill to Your Plate
               </h1>
               <p className="mb-6">
-                Join the Crushburg family and be a part of the fastest-growing burger & wraps brand.
+                Join the Crushburg family and be a part of the fastest-growing
+                burger & wraps brand.
               </p>
               <ul className="list-disc list-inside para space-y-2">
                 <li>Freshly grilled burgers and wraps</li>
@@ -99,10 +138,10 @@ const HomePage = () => {
             </div>
             {/* Right Image Section */}
             <div className="relative">
-              <img 
+              <img
                 src={shopAiImage2}
-                alt="Crushburg Shop" 
-                className="w-full h-full object-fit" 
+                alt="Crushburg Shop"
+                className="w-full h-full object-fit"
               />
             </div>
           </div>
