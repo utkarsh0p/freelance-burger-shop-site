@@ -8,6 +8,7 @@ import {
   royalSandwich,
   vegWrap,
   liteBurger,
+  hazelnutShake,
 } from "../constants";
 
 // Swiper styles
@@ -29,7 +30,7 @@ const ProductCarousel = () => {
   const categories = [
     {
       title: "King Fusion Burger",
-      desc:"Crunchy and delicious",
+      desc: "Crunchy and delicious",
       img: kingFusionBurger,
       btn: "Burgers",
     },
@@ -40,14 +41,14 @@ const ProductCarousel = () => {
       btn: "Wraps",
     },
     {
-      title: "Lite Burger",
+      title: "Shakes",
       desc: "Light, tasty, and guilt-free",
-      img: liteBurger,
-      btn: "Burgers",
+      img: hazelnutShake,
+      btn: "Shakes",
     },
     {
       title: "Royal Sandwich",
-      desc: "Classic layers with a royal touch",
+      desc: "Burgers with royal touch",
       img: royalSandwich,
       btn: "Sandwiches",
     },
@@ -93,7 +94,9 @@ const ProductCarousel = () => {
 
               {/* Content */}
               <div className="p-4 flex flex-col gap-2">
-                <h2 className="para font-semibold text-gray-800">{cat.title}</h2>
+                <h2 className="para font-semibold text-gray-800">
+                  {cat.title}
+                </h2>
                 <p className=" text-gray-500 para mb-2">{cat.desc}</p>
                 <button
                   onClick={handleNavigate}

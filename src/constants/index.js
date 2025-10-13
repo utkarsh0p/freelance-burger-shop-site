@@ -1,90 +1,144 @@
 //cards-back
 
-export const cardBakground = "https://res.cloudinary.com/dff30apwl/image/upload/v1757421604/w_700,f_auto,q_auto/download_ugve8n.png"
+export const cardBakground =
+  "https://res.cloudinary.com/dff30apwl/image/upload/v1757421604/w_700,f_auto,q_auto/download_ugve8n.png";
 
 //main-banner
 
-export const heroBanner = "https://res.cloudinary.com/dff30apwl/image/upload/w_1100,f_auto,q_auto/v1757327291/hero-bg-banner_rax1wy.png"
+export const heroBanner =
+  "https://res.cloudinary.com/dff30apwl/image/upload/w_1100,f_auto,q_auto/v1757327291/hero-bg-banner_rax1wy.png";
 
 // Logos
 
-export const logoRed = "https://res.cloudinary.com/dff30apwl/image/upload/w_300,f_png,q_auto/v1757423334/download_bdveg9.png"
+export const logoRed =
+  "https://res.cloudinary.com/dff30apwl/image/upload/w_300,f_png,q_auto/v1757423334/download_bdveg9.png";
 
-export const logoTwo = "https://res.cloudinary.com/dff30apwl/image/upload/w_300,f_auto,q_auto/v1757098033/CB_Logo_Transparent_rgv2df.png";
+export const logoTwo =
+  "https://res.cloudinary.com/dff30apwl/image/upload/w_300,f_auto,q_auto/v1757098033/CB_Logo_Transparent_rgv2df.png";
 
-export const navLogo = "https://res.cloudinary.com/dff30apwl/image/upload/w_300,f_auto,q_auto/v1758054996/main-logo_ejp6zq.jpg"
+export const navLogo =
+  "https://res.cloudinary.com/dff30apwl/image/upload/w_300,f_auto,q_auto/v1758054996/main-logo_ejp6zq.jpg";
 
-export const logo = "https://res.cloudinary.com/dff30apwl/image/upload/w_300,f_auto,q_auto/v1757097853/ASERR_rcppln.png";
+export const logo =
+  "https://res.cloudinary.com/dff30apwl/image/upload/w_300,f_auto,q_auto/v1757097853/ASERR_rcppln.png";
 
-export const logoName = "https://res.cloudinary.com/dff30apwl/image/upload/w_300,f_auto,q_auto/v1757098718/CrushBurg_Name_ai_1_mrjnq4.png";
+export const logoName =
+  "https://res.cloudinary.com/dff30apwl/image/upload/w_300,f_auto,q_auto/v1757098718/CrushBurg_Name_ai_1_mrjnq4.png";
 
 // Menus
-export const menuOne = "https://res.cloudinary.com/dff30apwl/image/upload/w_1200,f_auto,q_auto/v1757098544/WhatsApp_Image_2025-09-05_at_14.07.08_25a19a79_y5cwaa.jpg";
+export const menuOne =
+  "https://res.cloudinary.com/dff30apwl/image/upload/w_1200,f_auto,q_auto/v1757098544/WhatsApp_Image_2025-09-05_at_14.07.08_25a19a79_y5cwaa.jpg";
 
-export const menuTwo = "https://res.cloudinary.com/dff30apwl/image/upload/w_1200,f_auto,q_auto/v1757098513/WhatsApp_Image_2025-09-05_at_14.07.08_6d0d25fe_jgb9yh.jpg";
+export const menuTwo =
+  "https://res.cloudinary.com/dff30apwl/image/upload/w_1200,f_auto,q_auto/v1757098513/WhatsApp_Image_2025-09-05_at_14.07.08_6d0d25fe_jgb9yh.jpg";
 
 // Burgers
-export const kingFusionBurger = "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757097560/KING_FUSION_BURGER_kdnuch.jpg";
+export const kingFusionBurger =
+  "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757097560/KING_FUSION_BURGER_kdnuch.jpg";
 
-export const crunchyVegBurger = "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757097405/Crunchy_veg_dqmkwk.jpg";
+export const crunchyVegBurger =
+  "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757097405/Crunchy_veg_dqmkwk.jpg";
 
-export const crunchyTandooriBurger = "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757097380/CRUNCHY_TANDOORI_BURGER_jbyomn.jpg";
+export const crunchyTandooriBurger =
+  "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757097380/CRUNCHY_TANDOORI_BURGER_jbyomn.jpg";
 
-export const makhniBurger = "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757096535/cb_makhani_burger_elaqyx.jpg";
+export const makhniBurger =
+  "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757096535/cb_makhani_burger_elaqyx.jpg";
 
-export const liteBurger = "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757096483/Cb_lite_burger_kciwu7.jpg";
+export const liteBurger =
+  "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757096483/Cb_lite_burger_kciwu7.jpg";
 
-export const delightBurger = "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757096367/Cb_delight_burger_v5hdsf.jpg";
+export const delightBurger =
+  "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757096367/Cb_delight_burger_v5hdsf.jpg";
 
-export const crunchyCheeseBurger = "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757097369/Cruchy_cheese_burger_ibx7xc.jpg";
+export const crunchyCheeseBurger =
+  "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757097369/Cruchy_cheese_burger_ibx7xc.jpg";
 
 // Wraps
-export const contWrap = "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757097280/Corn_wrap_p8gufk.jpg";
+export const contWrap =
+  "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757097280/Corn_wrap_p8gufk.jpg";
 
-export const paneerWrap = "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757097263/Paneer_wrap_cy66sc.jpg";
+export const paneerWrap =
+  "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757097263/Paneer_wrap_cy66sc.jpg";
 
 // Sandwiches
-export const vegWrap = "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757097252/Veg_wrap_iurcuf.jpg";
+export const vegWrap =
+  "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757097252/Veg_wrap_iurcuf.jpg";
 
-export const royalSandwich = "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757097183/Royal_sandwich_si4eni.jpg";
+export const royalSandwich =
+  "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757097183/Royal_sandwich_si4eni.jpg";
 
-export const cornAndCheeseSandwich = "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757096588/Corn_and_cheese_sandwich_pimqpz.jpg";
+export const cornAndCheeseSandwich =
+  "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757096588/Corn_and_cheese_sandwich_pimqpz.jpg";
+
+//shakes
+
+export const oreoShake =
+  "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1760326001/Oreo_shake_swx6vd.jpg";
+
+export const burbournShake =
+  "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1760326000/Burbourn_shake_y3uigv.jpg";
+
+export const chocolateShake =
+  "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1760325999/Chocolate_shake_ttqvkk.jpg";
+
+export const mangoShake =
+  "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1760325860/Mango_shake_ok8fvj.jpg";
+
+export const hazelnutShake =
+  "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1760325859/Hazelnut_cold_coffee_qll9rb.jpg";
+
+export const classicShake =
+  "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1760325857/Classic_cold_coffee_nrj6j3.jpg";
 
 //menu images
 
-export const burger = "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757423048/burger_rqaecw.png"
+export const burger =
+  "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757423048/burger_rqaecw.png";
 
+export const sandwiches =
+  "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757423038/download_tip2rr.png";
 
-export const sandwiches = "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757423038/download_tip2rr.png"
+export const fries =
+  "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757423055/download_neqkjk.png";
 
-export const fries = "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757423055/download_neqkjk.png"
+export const icecream =
+  "https://res.cloudinary.com/dff30apwl/image/upload/v1757423053/download_zlwers.png";
 
-export const icecream = "https://res.cloudinary.com/dff30apwl/image/upload/v1757423053/download_zlwers.png"
+export const dessert =
+  "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757423061/download_vnons1.png";
 
-export const dessert = "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757423061/download_vnons1.png"
+export const wraps =
+  "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757441986/download_m2vrmz.png";
 
-export const wraps = "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757441986/download_m2vrmz.png"
+export const crusburgBrandingCard =
+  "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757423273/04_sgsbph.jpg";
 
-export const crusburgBrandingCard = "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1757423273/04_sgsbph.jpg"
-
-export const cardBackground = "https://res.cloudinary.com/dff30apwl/image/upload/v1757441272/catagory-card-shape_prusnv.png"
-
+export const cardBackground =
+  "https://res.cloudinary.com/dff30apwl/image/upload/v1757441272/catagory-card-shape_prusnv.png";
 
 //shop pictures
 
-export const shop = "https://res.cloudinary.com/dff30apwl/image/upload/q_auto,f_auto/v1758050606/cbshop_hfxfyd.jpg"
+export const shop =
+  "https://res.cloudinary.com/dff30apwl/image/upload/q_auto,f_auto/v1758050606/cbshop_hfxfyd.jpg";
 
-export const shop1="https://res.cloudinary.com/dff30apwl/image/upload/v1758050607/cbGala_sshfsi.jpg"
+export const shop1 =
+  "https://res.cloudinary.com/dff30apwl/image/upload/v1758050607/cbGala_sshfsi.jpg";
 
-export const shop2="https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1758050844/shop3_biz15b.jpg"
+export const shop2 =
+  "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1758050844/shop3_biz15b.jpg";
 
-export const shop3="https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1758051252/shop6_azzjll.jpg"
+export const shop3 =
+  "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1758051252/shop6_azzjll.jpg";
 
-export const shop4="https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1758063930/Screenshot_2025-09-17_043323_rcc1r0.png"
+export const shop4 =
+  "https://res.cloudinary.com/dff30apwl/image/upload/w_400,f_auto,q_auto/v1758063930/Screenshot_2025-09-17_043323_rcc1r0.png";
 
-export const shopAiImage = "https://res.cloudinary.com/dff30apwl/image/upload/f_auto,q_auto/v1759142205/WhatsApp_Image_2025-09-20_at_17.47.28_70885e53_xpjvrm.jpg"
+export const shopAiImage =
+  "https://res.cloudinary.com/dff30apwl/image/upload/f_auto,q_auto/v1759142205/WhatsApp_Image_2025-09-20_at_17.47.28_70885e53_xpjvrm.jpg";
 
-export const shopAiImage2 = "https://res.cloudinary.com/dff30apwl/image/upload/f_auto,q_auto/v1759142202/WhatsApp_Image_2025-09-20_at_17.47.29_18efd7d9_nlfk8z.jpg"
+export const shopAiImage2 =
+  "https://res.cloudinary.com/dff30apwl/image/upload/f_auto,q_auto/v1759142202/WhatsApp_Image_2025-09-20_at_17.47.29_18efd7d9_nlfk8z.jpg";
 
 export const menu = {
   burgers: [
