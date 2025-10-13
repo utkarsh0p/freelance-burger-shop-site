@@ -1,7 +1,7 @@
 import React from "react";
 import {
   heroBanner,
-  crusburgBrandingCard,
+  heroBannerA,
   shop,
   shop1,
   shop2,
@@ -18,8 +18,8 @@ const HomePage = () => {
   return (
     <div className="homepage primary-color">
       <div
-        className="banner w-[100%] h-[23vh] md:h-[50vh] lg:h-[70vh] bg-red-dark bg-cover bg-center"
-        style={{ backgroundImage: `url(${heroBanner})` }}
+        className="banner w-[100%] h-[20vh] md:h-[50vh] lg:h-[70vh] bg-red-dark bg-cover bg-center"
+        style={{ backgroundImage: `url(${heroBannerA})` }}
       ></div>
 
       {/* section one */}

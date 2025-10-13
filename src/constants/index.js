@@ -5,6 +5,9 @@ export const cardBakground =
 
 //main-banner
 
+export const heroBannerA =
+  "https://res.cloudinary.com/dff30apwl/image/upload/f_auto,q_auto/v1760325681/cbanner_pq5kde.png";
+
 export const heroBanner =
   "https://res.cloudinary.com/dff30apwl/image/upload/w_1100,f_auto,q_auto/v1757327291/hero-bg-banner_rax1wy.png";
 

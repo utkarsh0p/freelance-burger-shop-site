@@ -1,19 +1,36 @@
-import React from "react";
+// Footer.jsx
+import React, { useState } from "react";
 import { logoTwo } from "../constants";
 import { useNavigate } from "react-router-dom";
-import {
-  Facebook,
-  Instagram,
-  Youtube,
-  Twitter,
-  FileText,
-  Users,
-} from "lucide-react";
+import { Facebook, Instagram, Youtube, Twitter, Users } from "lucide-react";
+
+const CONTACT_NUMBER = "+917619910103";
+const CONTACT_EMAIL = "connect@crushburg.com";
 
 const Footer = () => {
   const navigate = useNavigate();
-  const CONTACT_NUMBER = "+917619910103";
-  const CONTACT_EMAIL = "connect@crushburg.com";
+  const [openSection, setOpenSection] = useState(null);
+  const toggleSection = (section) => {
+    setOpenSection(openSection === section ? null : section);
+  };
+
+  const companyLinks = [
+    { label: "Terms Of Use", path: "/termsofuse" },
+    { label: "Privacy Policy", path: "/privacypolicy" },
+    { label: "About Us", path: "/aboutus" },
+    { label: "Contact Us", path: "/contact" },
+    { label: "FAQ", path: "/faq" },
+    { label: "Store Location", path: "/store" },
+  ];
+
+  const shopCategories = [
+    "Burgers",
+    "Fries & Sides",
+    "Combos & Deals",
+    "Beverages",
+    "Desserts",
+    "Special Offers",
+  ];
 
   return (
     <footer className="w-full bg-white text-black font-body border-t border-gray-200">
@@ -25,9 +42,19 @@ const Footer = () => {
             CrushBurg is your go-to burger franchise serving mouth-watering
             burgers, fries, and more — crafted to satisfy every craving.
           </p>
-          <div className="space-y-2 text-sm">
-            <p className="font-medium">{CONTACT_NUMBER}</p>
-            <p className="font-medium">{CONTACT_EMAIL}</p>
+          <div className="flex flex-wrap gap-4 text-sm font-medium">
+            <a
+              href={`tel:${CONTACT_NUMBER}`}
+              className="hover:text-red-dark transition"
+            >
+              {CONTACT_NUMBER}
+            </a>
+            <a
+              href={`mailto:${CONTACT_EMAIL}`}
+              className="hover:text-red-dark transition"
+            >
+              {CONTACT_EMAIL}
+            </a>
           </div>
           <div className="flex gap-3 pt-2 flex-wrap">
             <a
@@ -58,96 +85,143 @@ const Footer = () => {
         </div>
 
         {/* Company Links */}
-        <div>
+        <div className="md:block hidden">
           <h4 className="font-semibold mb-4 text-lg md:text-xl">Our Company</h4>
           <ul className="space-y-2 text-sm">
-            <li>
-              <button onClick={() => navigate("/termsofuse")}>
-                Terms Of Use
-              </button>
-            </li>
-            <li>
-              <button onClick={() => navigate("/privacypolicy")}>
-                Privacy Policy
-              </button>
-            </li>
-            <li>
-              <button onClick={() => navigate("/aboutus")}>About Us</button>
-            </li>
-            <li>
-              <button onClick={() => navigate("/contact")}>Contact Us</button>
-            </li>
-            <li>
-              <button onClick={() => navigate("/faq")}>FAQ</button>
-            </li>
-            <li>
-              <button onClick={() => navigate("/store")}>Store Location</button>
-            </li>
+            {companyLinks.map((link, idx) => (
+              <li key={idx}>
+                <button onClick={() => navigate(link.path)}>
+                  {link.label}
+                </button>
+              </li>
+            ))}
           </ul>
         </div>
 
         {/* Shop Categories */}
-        <div>
-          <h4 className="font-semibold mb-4 text-lg md:text-xl">
-            Shop Categories
-          </h4>
+        <div className="md:block hidden">
+          <h4 className="font-semibold mb-4 text-lg">Shop Categories</h4>
           <ul className="space-y-2 text-sm">
-            <li>
-              <button onClick={() => navigate("/menu")}>Burgers</button>
-            </li>
-            <li>
-              <button onClick={() => navigate("/menu")}>Fries & Sides</button>
-            </li>
-            <li>
-              <button onClick={() => navigate("/menu")}>Combos & Deals</button>
-            </li>
-            <li>
-              <button onClick={() => navigate("/menu")}>Beverages</button>
-            </li>
-            <li>
-              <button onClick={() => navigate("/menu")}>Desserts</button>
-            </li>
-            <li>
-              <button onClick={() => navigate("/menu")}>Special Offers</button>
-            </li>
+            {shopCategories.map((cat, idx) => (
+              <li key={idx}>
+                <button onClick={() => navigate("/menu")}>{cat}</button>
+              </li>
+            ))}
           </ul>
         </div>
 
-        {/* Franchise / Business Opportunities */}
-        <div>
-          <h4 className="font-semibold mb-4 text-lg md:text-xl">
+        {/* Franchise Section */}
+        <div className="md:block hidden">
+          <h4 className="font-semibold mb-4 text-lg">
             Franchise & Grow With Us
           </h4>
-          <p className="text-sm mb-4">
+          <p className="text-sm mb-2">
             Become a CrushBurg partner and take advantage of our proven business
-            model, strong ROI, and support system.
+            model, strong ROI, and complete support system.
           </p>
-          <div className="flex flex-col gap-2">
-            <button
-              onClick={() => navigate("/franchise")}
-              className="inline-flex items-center gap-2 bg-red-dark text-white px-4 py-2 rounded-full font-medium hover:bg-red-700 transition text-sm"
-            >
-              <Users size={16} /> Explore Franchise Opportunities
-            </button>
+          <button
+            onClick={() => navigate("/franchise")}
+            className="inline-flex items-center gap-2 bg-red-dark text-white px-4 py-2 rounded-full font-medium hover:bg-red-700 transition mb-2"
+          >
+            <Users size={16} /> Explore Franchise
+          </button>
+          <div className="flex flex-wrap gap-2 mt-1">
             <a
               href={`mailto:${CONTACT_EMAIL}`}
-              className="inline-flex items-center gap-2 bg-gray-100 text-black px-4 py-2 rounded-full font-medium hover:bg-gray-200 transition text-sm"
+              className="inline-flex items-center gap-2 text-sm text-white px-4 py-2 bg-red-dark rounded-full hover:bg-black transition"
             >
-              <FileText size={16} /> Email Us
+              Email
             </a>
             <a
               href={`tel:${CONTACT_NUMBER}`}
-              className="inline-flex items-center gap-2 bg-gray-100 text-black px-4 py-2 rounded-full font-medium hover:bg-gray-200 transition text-sm"
+              className="inline-flex items-center gap-2 text-sm text-white px-4 py-2 bg-green-500 rounded-full hover:bg-green-600 transition"
             >
-              <Users size={16} /> Call Us
+              Phone
             </a>
           </div>
         </div>
-      </div>
 
-      {/* Bottom Note */}
-      <div className="border-t border-gray-200 mt-6 py-4 text-center text-xs text-gray-500">
-        &copy; {new Date().getFullYear()} CrushBurg. All rights reserved.
+        {/* Mobile Accordion */}
+        <div className="md:hidden col-span-4 space-y-2">
+          {/* Company Accordion */}
+          <div className="border-b border-gray-200 py-2">
+            <button
+              onClick={() => toggleSection("company")}
+              className="w-full text-left flex justify-between items-center font-semibold text-red-dark"
+            >
+              Our Company <span>{openSection === "company" ? "-" : "+"}</span>
+            </button>
+            {openSection === "company" && (
+              <ul className="mt-2 space-y-2 text-sm">
+                {companyLinks.map((link, idx) => (
+                  <li key={idx}>
+                    <button onClick={() => navigate(link.path)}>
+                      {link.label}
+                    </button>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+
+          {/* Shop Accordion */}
+          <div className="border-b border-gray-200 py-2">
+            <button
+              onClick={() => toggleSection("shop")}
+              className="w-full text-left flex justify-between items-center font-semibold text-red-dark"
+            >
+              Shop Categories <span>{openSection === "shop" ? "-" : "+"}</span>
+            </button>
+            {openSection === "shop" && (
+              <ul className="mt-2 space-y-2 text-sm">
+                {shopCategories.map((cat, idx) => (
+                  <li key={idx}>
+                    <button onClick={() => navigate("/menu")}>{cat}</button>
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+
+          {/* Franchise Accordion */}
+          <div className="py-2">
+            <button
+              onClick={() => toggleSection("franchise")}
+              className="w-full text-left flex justify-between items-center font-semibold text-red-dark"
+            >
+              Franchise & Grow With Us{" "}
+              <span>{openSection === "franchise" ? "-" : "+"}</span>
+            </button>
+            {openSection === "franchise" && (
+              <div className="mt-2 space-y-2 text-sm">
+                <p className="text-sm mb-2">
+                  Become a CrushBurg partner and take advantage of our proven
+                  business model, strong ROI, and complete support system.
+                </p>
+                <button
+                  onClick={() => navigate("/franchise")}
+                  className="inline-flex items-center gap-2 bg-red-dark text-white px-4 py-2 rounded-full font-medium hover:bg-red-700 transition"
+                >
+                  <Users size={16} /> Explore Franchise
+                </button>
+                <div className="flex flex-wrap gap-2 mt-2">
+                  <a
+                    href={`mailto:${CONTACT_EMAIL}`}
+                    className="inline-flex items-center gap-2 text-sm text-white px-4 py-2 bg-red-dark rounded-full hover:bg-black transition"
+                  >
+                    Email
+                  </a>
+                  <a
+                    href={`tel:${CONTACT_NUMBER}`}
+                    className="inline-flex items-center gap-2 text-sm text-white px-4 py-2 bg-green-500 rounded-full hover:bg-green-600 transition"
+                  >
+                    Phone
+                  </a>
+                </div>
+              </div>
+            )}
+          </div>
+        </div>
       </div>
     </footer>
   );
