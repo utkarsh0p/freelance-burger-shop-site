@@ -1,10 +1,19 @@
 import React from "react";
 import { logoTwo } from "../constants";
 import { useNavigate } from "react-router-dom";
-import { Facebook, Instagram, Youtube, Twitter } from "lucide-react";
+import {
+  Facebook,
+  Instagram,
+  Youtube,
+  Twitter,
+  FileText,
+  Users,
+} from "lucide-react";
 
 const Footer = () => {
   const navigate = useNavigate();
+  const CONTACT_NUMBER = "+917619910103";
+  const CONTACT_EMAIL = "connect@crushburg.com";
 
   return (
     <footer className="w-full bg-white text-black font-body border-t border-gray-200">
@@ -17,8 +26,8 @@ const Footer = () => {
             burgers, fries, and more — crafted to satisfy every craving.
           </p>
           <div className="space-y-2 text-sm">
-            <p className="font-medium">+917619910103</p>
-            <p className="font-medium">connect@crushburg.com</p>
+            <p className="font-medium">{CONTACT_NUMBER}</p>
+            <p className="font-medium">{CONTACT_EMAIL}</p>
           </div>
           <div className="flex gap-3 pt-2 flex-wrap">
             <a
@@ -79,7 +88,9 @@ const Footer = () => {
 
         {/* Shop Categories */}
         <div>
-          <h4 className="font-semibold mb-4 text-lg text-x">Shop Categories</h4>
+          <h4 className="font-semibold mb-4 text-lg md:text-xl">
+            Shop Categories
+          </h4>
           <ul className="space-y-2 text-sm">
             <li>
               <button onClick={() => navigate("/menu")}>Burgers</button>
@@ -102,30 +113,41 @@ const Footer = () => {
           </ul>
         </div>
 
-        {/* Newsletter */}
+        {/* Franchise / Business Opportunities */}
         <div>
-          <h4 className="font-semibold mb-4 text-lg text-x">
-            Sign Up to Newsletter
+          <h4 className="font-semibold mb-4 text-lg md:text-xl">
+            Franchise & Grow With Us
           </h4>
           <p className="text-sm mb-4">
-            Get the latest updates, offers, and new menu items from CrushBurg.
+            Become a CrushBurg partner and take advantage of our proven business
+            model, strong ROI, and support system.
           </p>
-          <div className="flex w-full">
-            <input
-              type="email"
-              placeholder="Enter your email..."
-              className="flex-1 px-4 py-2 rounded-l-full border border-gray-300 focus:outline-none text-sm"
-            />
-            <button className="bg-black text-white px-6 rounded-r-full font-medium hover:bg-red-dark transition text-sm">
-              Subscribe
+          <div className="flex flex-col gap-2">
+            <button
+              onClick={() => navigate("/franchise")}
+              className="inline-flex items-center gap-2 bg-red-dark text-white px-4 py-2 rounded-full font-medium hover:bg-red-700 transition text-sm"
+            >
+              <Users size={16} /> Explore Franchise Opportunities
             </button>
+            <a
+              href={`mailto:${CONTACT_EMAIL}`}
+              className="inline-flex items-center gap-2 bg-gray-100 text-black px-4 py-2 rounded-full font-medium hover:bg-gray-200 transition text-sm"
+            >
+              <FileText size={16} /> Email Us
+            </a>
+            <a
+              href={`tel:${CONTACT_NUMBER}`}
+              className="inline-flex items-center gap-2 bg-gray-100 text-black px-4 py-2 rounded-full font-medium hover:bg-gray-200 transition text-sm"
+            >
+              <Users size={16} /> Call Us
+            </a>
           </div>
-          <p className="text-xs text-gray-600 mt-3 leading-snug">
-            ***By entering the e-mail you accept the{" "}
-            <span className="font-semibold">terms and conditions</span> and the{" "}
-            <span className="font-semibold">privacy policy</span>.
-          </p>
         </div>
+      </div>
+
+      {/* Bottom Note */}
+      <div className="border-t border-gray-200 mt-6 py-4 text-center text-xs text-gray-500">
+        &copy; {new Date().getFullYear()} CrushBurg. All rights reserved.
       </div>
     </footer>
   );
